@@ -38,7 +38,7 @@ def login_view(request):
     else:
         return redirect("home")
 
-
+# test2
 def logout_view(request):
     logout(request)
     return redirect("home")
