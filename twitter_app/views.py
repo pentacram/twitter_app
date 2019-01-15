@@ -1,6 +1,6 @@
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect
-
+#Test
 # Create your views here.
 from twitter_app.forms import LoginForm
 
