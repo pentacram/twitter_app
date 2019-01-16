@@ -9,7 +9,8 @@
 				<a class="" href="#menu"><i class="fa fa-align-justify"></i></a>
 			</span>
                     <span class="mh-text">
-				<a href="newsfeed.html" title=""><img src="{% static 'twitter/images/python_logo.png' %}" alt=""></a>
+				<a href="{% url 'home' %}" title="">
+                    <img src="{% static 'twitter/images/python_logo.png' %}" alt=""></a>
 			</span>
                     <span class="mh-btns-right">
 				<a class="fa fa-sliders" href="#shoppingbag"></a>
@@ -195,8 +196,8 @@
 
             <div class="topbar stick">
                 <div class="logo">
-                    <a title="" href="newsfeed.html"><img style="width: 55px;"
-                                                          src="{% static 'twitter/images/python_logo.png' %}" alt="">
+                    <a title="" style="height: auto;top: -22px;position: relative;" href="{% url 'home' %}">
+                        <img style="width: 55px;" src="{% static 'twitter/images/python_logo.png' %}" alt="">
                         Twitter app</a>
                 </div>
 
@@ -408,7 +409,8 @@
                             <a href="#" title=""><i class="ti-pencil-alt"></i>edit profile</a>
                             <a href="#" title=""><i class="ti-target"></i>activity log</a>
                             <a href="#" title=""><i class="ti-settings"></i>account setting</a>
-                            <a onclick="location.href = '{% url 'logout' %}'" title=""><i class="ti-power-off"></i>log out</a>
+                            <a onclick="location.href = '{% url 'logout' %}'" title=""><i class="ti-power-off"></i>log
+                                out</a>
                         </div>
                     </div>
                     <br>
@@ -505,7 +507,8 @@
                                         <div class="central-meta">
                                             <div class="new-postbox">
                                                 <figure>
-                                                    <img src="{% static 'twitter/images/resources/admin2.jpg' %}" alt="">
+                                                    <img src="{% static 'twitter/images/resources/admin2.jpg' %}"
+                                                         alt="">
                                                 </figure>
                                                 <div class="newpst-input">
                                                     <form method="post">
@@ -533,7 +536,8 @@
                                                 <div class="user-post">
                                                     <div class="friend-info">
                                                         <figure>
-                                                            <img src="{% static 'twitter/images/resources/friend-avatar10.jpg' %}" alt="">
+                                                            <img src="{% static 'twitter/images/resources/friend-avatar10.jpg' %}"
+                                                                 alt="">
                                                         </figure>
                                                         <div class="friend-name">
                                                             <ins><a href="time-line.html" title="">Janice Griffith</a>
@@ -541,12 +545,14 @@
                                                             <span>published: june,2 2018 19:PM</span>
                                                         </div>
                                                         <div class="post-meta">
-                                                            <img src="{% static 'twitter/images/resources/user-post.jpg' %}" alt="">
+                                                            <img src="{% static 'twitter/images/resources/user-post.jpg' %}"
+                                                                 alt="">
 
                                                             <div class="description">
 
                                                                 <p>
-                                                                    World's most beautiful car in Curabitur the most beatuiful car available
+                                                                    World's most beautiful car in Curabitur the most
+                                                                    beatuiful car available
                                                                     in
                                                                     america and the saudia arabia, you can book your
                                                                     test
@@ -631,7 +637,8 @@
                                                         <ul class="we-comet">
                                                             <li>
                                                                 <div class="comet-avatar">
-                                                                    <img src="{% static 'twitter/images/resources/comet-1.jpg' %}" alt="">
+                                                                    <img src="{% static 'twitter/images/resources/comet-1.jpg' %}"
+                                                                         alt="">
                                                                 </div>
                                                                 <div class="we-comment">
                                                                     <div class="coment-head">
@@ -698,7 +705,8 @@
                                                             </li>
                                                             <li class="post-comment">
                                                                 <div class="comet-avatar">
-                                                                    <img src="{% static 'twitter/images/resources/comet-1.jpg' %}" alt="">
+                                                                    <img src="{% static 'twitter/images/resources/comet-1.jpg' %}"
+                                                                         alt="">
                                                                 </div>
                                                                 <div class="post-comt-box">
                                                                     <form method="post">
