@@ -35,8 +35,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'base_user',
     'twitter_app',
 ]
+
+AUTH_USER_MODEL = 'base_user.MyUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
