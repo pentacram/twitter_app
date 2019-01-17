@@ -210,7 +210,7 @@
                         </li>
                     </ul>
                     <div class="user-img" style="margin-right: 40px;">
-                        <img src="{% static 'twitter/images/resources/admin.jpg' %}" alt="">
+                        <img style="width: 50px;" src="{{ request.user.get_avatar }}" alt="">
                         <span class="status f-online"></span>
                         <div class="user-setting">
                             <a href="#" title=""><i class="ti-user"></i> View profile</a>
@@ -299,7 +299,7 @@
                                         <div class="central-meta">
                                             <div class="new-postbox">
                                                 <figure>
-                                                    <img src="{% static 'twitter/images/resources/admin2.jpg' %}"
+                                                    <img src="{{ request.user.get_avatar }}"
                                                          alt="">
                                                 </figure>
                                                 <div class="newpst-input">
@@ -429,7 +429,7 @@
                                                         <ul class="we-comet">
                                                             <li>
                                                                 <div class="comet-avatar">
-                                                                    <img src="{% static 'twitter/images/resources/comet-1.jpg' %}"
+                                                                    <img src="{{ request.user.get_avatar }}"
                                                                          alt="">
                                                                 </div>
                                                                 <div class="we-comment">
@@ -539,7 +539,7 @@
                                                 <div class="your-page">
                                                     <figure>
                                                         <a href="#" title=""><img
-                                                                src="{% static 'twitter/images/resources/friend-avatar9.jpg' %}"
+                                                                src="{{ request.user.get_avatar }}"
                                                                 alt=""></a>
                                                     </figure>
                                                     <div class="page-meta">

@@ -6,7 +6,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, UserManager
 from base_user.tools.common import get_user_profile_photo_file_name, GENDER
 USER_MODEL = settings.AUTH_USER_MODEL
-
+from easy_thumbnails.files import get_thumbnailer
 
 # Customize User model
 class MyUser(AbstractBaseUser, PermissionsMixin):
@@ -66,6 +66,6 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
 
     def get_avatar(self):
         if self.profile_picture:
-            return self.profile_picture.url
+            return get_thumbnailer(self.profile_picture)['avatar'].url
         else:
             return "https://graph.facebook.com/%s/picture?type=large" % '100002461198950'
