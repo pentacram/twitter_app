@@ -1,4 +1,5 @@
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 # Test
 # Create your views here.
@@ -77,5 +78,11 @@ def dashboard_view(request):
 
 
 def timeline_view(request):
+    context = {}
+    return render(request, "accounts/detail.html", context)
+
+
+@login_required(login_url='/')
+def add_post_view(request):
     context = {}
     return render(request, "accounts/detail.html", context)
