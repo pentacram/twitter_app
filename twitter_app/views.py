@@ -51,4 +51,4 @@ def dashboard_view(request):
 def timeline_view(request):
     context = {}
     return render(request, "accounts/detail.html", context)
-vhjhjkjhj
+
