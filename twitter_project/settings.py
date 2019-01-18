@@ -35,8 +35,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'easy_thumbnails',
+    'base_user',
     'twitter_app',
 ]
+
+AUTH_USER_MODEL = 'base_user.MyUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -80,6 +84,12 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',
     }
+}
+
+THUMBNAIL_ALIASES = {
+    '': {
+        'avatar': {'size': (600, 600), 'crop': True},
+    },
 }
 
 # Password validation
